@@ -9,9 +9,8 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
+import ProductMenu from "./dropMenus/productMenu";
 import { routes_o } from "src/routes";
-import ProductMenu from "./dropMenus/ProductMenu";
 
 export function Navbar({ brandName, routes, action }) {
   const [openNav, setOpenNav] = React.useState(false);

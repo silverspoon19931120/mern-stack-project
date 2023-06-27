@@ -9,9 +9,9 @@ import {
   Button,
   Typography,
 } from "@material-tailwind/react";
-import { SimpleFooter } from "@/widgets/layout";
+import { SimpleFooter } from "src/widgets/layout";
 
-export function SignUp() {
+export function Company() {
   return (
     <>
       <img
@@ -70,4 +70,4 @@ export function SignUp() {
   );
 }
 
-export default SignUp;
+export default Company;

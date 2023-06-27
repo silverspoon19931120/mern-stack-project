@@ -9,9 +9,9 @@ import {
   Button,
   Typography,
 } from "@material-tailwind/react";
-import { SimpleFooter } from "@/widgets/layout";
+import { SimpleFooter } from "src/widgets/layout";
 
-export function SignIn() {
+export function Company() {
   return (
     <>
       <img
@@ -27,10 +27,11 @@ export function SignIn() {
             className="mb-4 grid h-28 place-items-center"
           >
             <Typography variant="h3" color="white">
-              Sign In
+              Sign Up
             </Typography>
           </CardHeader>
           <CardBody className="flex flex-col gap-4">
+            <Input variant="standard" label="Name" size="lg" />
             <Input variant="standard" type="email" label="Email" size="lg" />
             <Input
               variant="standard"
@@ -39,23 +40,23 @@ export function SignIn() {
               size="lg"
             />
             <div className="-ml-2.5">
-              <Checkbox label="Remember Me" />
+              <Checkbox label="I agree the Terms and Conditions" />
             </div>
           </CardBody>
           <CardFooter className="pt-0">
             <Button variant="gradient" fullWidth>
-              Sign In
+              Sign Up
             </Button>
             <Typography variant="small" className="mt-6 flex justify-center">
-              Don't have an account?
-              <Link to="/sign-up">
+              Already have an account?
+              <Link to="/sign-in">
                 <Typography
                   as="span"
                   variant="small"
                   color="blue"
                   className="ml-1 font-bold"
                 >
-                  Sign up
+                  Sign in
                 </Typography>
               </Link>
             </Typography>
@@ -69,4 +70,4 @@ export function SignIn() {
   );
 }
 
-export default SignIn;
+export default Company;

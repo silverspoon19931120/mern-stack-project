@@ -4,9 +4,9 @@ import {
   BriefcaseIcon,
   BuildingLibraryIcon,
 } from "@heroicons/react/24/solid";
-import { Footer } from "@/widgets/layout";
+import { Footer } from "src/widgets/layout";
 
-export function Profile() {
+export function Solutions() {
   return (
     <>
       <section className="relative block h-[50vh]">
@@ -132,4 +132,4 @@ export function Profile() {
   );
 }
 
-export default Profile;
+export default Solutions;
